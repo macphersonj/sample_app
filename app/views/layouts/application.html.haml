@@ -1,8 +1,8 @@
 !!!
 %html
   %head
-    %title
-      Ruby on Rails Tutorial Sample App | %= @title
-    = csrf_meta_tag
+    %title= title
+    = stylesheet_link_tag "application"
   %body
-    = yield
+    .container
+      = yield
